@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="font-poppins bg-gray-100 text-gray-800">
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-xl sm:text-2xl font-bold text-blue-400 font-inter">Rudresh Trivedi</h1>
+                </div>
+                <div class="flex items-center space-x-2 sm:space-x-4">
+                    <a href="#home" class="nav-link text-gray-600 hover:text-blue-400 px-2 py-3 rounded-md text-sm font-medium" aria-label="Home">Home</a>
+                    <a href="#about" class="nav-link text-gray-600 hover:text-blue-400 px-2 py-3 rounded-md text-sm font-medium" aria-label="About">About</a>
+                    <a href="#projects" class="nav-link text-gray-600 hover:text-blue-400 px-2 py-3 rounded-md text-sm font-medium" aria-label="Projects">Projects</a>
+                    <a href="#contact" class="nav-link text-gray-600 hover:text-blue-400 px-2 py-3 rounded-md text-sm font-medium" aria-label="Contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-[80vh] flex items-center justify-center bg-gradient-to-r from-blue-800 to-cyan-100 text-white relative overflow-hidden section">
+        <canvas id="particles"></canvas>
+        <div class="text-center max-w-3xl mx-auto px-4 z-10">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 font-inter">Hi, I'm Rudresh Trivedi</h2>
+            <p class="text-lg sm:text-xl mb-6">
+                <span id="typing-text" class="typing-text" aria-live="polite"></span>
+            </p>
+            <a href="#projects" class="btn-primary inline-block font-semibold px-6 py-3 rounded-full text-base" aria-label="View projects">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-12 sm:py-20 bg-white section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 font-inter">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-6 sm:gap-8">
+                <div class="md:w-1/3">
+                    <img src="person.jpeg" alt="Profile picture of Rudresh Trivedi" class="rounded-full shadow-lg mx-auto">
+                </div>
+                <div class="md:w-2/3">
+                    <p class="text-base sm:text-lg mb-4">Motivated computer science student with strong foundations in full-stack development (JavaScript, HTML/CSS, Node.js, SQL) and scripting (Python, Java). Passionate about building responsive web apps with modern frameworks like Next.js and Tailwind CSS, and exploring AI/ML and quantitative finance through hands-on projects. Quick learner with a problem-solving mindset, currently diving into blockchain development (Solidity) and data-driven applications. Seeking to contribute my technical skills and enthusiasm for innovation in a collaborative internship environment.</p>
+                    <p class="text-base sm:text-lg mb-4">My goal is to craft user-friendly interfaces and robust backends that solve real-world problems. I love learning new technologies and collaborating with teams to bring ideas to life.</p>
+                    <div class="flex flex-wrap gap-3 sm:gap-4 mt-6">
+                        <span class="px-4 py-2 bg-blue-100 text-blue-400 rounded-full text-sm sm:text-base">SQL</span>
+                        <span class="px-4 py-2 bg-blue-100 text-blue-400 rounded-full text-sm sm:text-base">Node.js</span>
+                        <span class="px-4 py-2 bg-blue-100 text-blue-400 rounded-full text-sm sm:text-base">Python</span>
+                        <span class="px-4 py-2 bg-blue-100 text-blue-400 rounded-full text-sm sm:text-base">JAVA</span>
+                        <span class="px-4 py-2 bg-blue-100 text-blue-400 rounded-full text-sm sm:text-base">HTML/CSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-12 sm:py-20 bg-gray-100 section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 font-inter">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden project-card">
+                    <img src="clone.jpeg" alt="E-Commerce Platform project" class="w-full h-40 sm:h-48 object-cover">
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-semibold mb-2 font-inter">Real Estate</h3>
+                        <p class="text-gray-600 text-sm sm:text-base mb-4">A full-stack e-commerce application built with HTML/CSS and js. Features include user authentication, product filtering.</p>
+                        <a href="https://github.com/RudreshTrivedi013/Real_estate.git" class="btn-link text-sm sm:text-base" aria-label="View E-Commerce Platform project">View Project</a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden project-card">
+                    <img src="stock-market.jpg" alt="Task Management App project" class="w-full h-40 sm:h-48 object-cover">
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-semibold mb-2 font-inter">Stock market analysis app</h3>
+                        <p class="text-gray-600 text-sm sm:text-base mb-4">A productivity app built with Python , allowing users to create, assign, and track tasks with real-time updates.</p>
+                        <a href="https://github.com/RudreshTrivedi013/StockMarket_analysis.git" class="btn-link text-sm sm:text-base" aria-label="View Task Management App project">View Project</a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden project-card">
+                    <img src="Screenshot_13-5-2025_153216_127.0.0.1.jpeg" alt="Portfolio Website project" class="w-full h-40 sm:h-48 object-cover">
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-semibold mb-2 font-inter">Portfolio Website</h3>
+                        <p class="text-gray-600 text-sm sm:text-base mb-4">A responsive portfolio website built with HTML, Tailwind CSS, and JavaScript to showcase my work and skills.</p>
+                        <a href="" class="btn-link text-sm sm:text-base" aria-label="View Portfolio Website project">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 sm:py-20 bg-white section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 font-inter">Get in Touch</h2>
+            <div class="max-w-lg mx-auto">
+                <p class="text-base sm:text-lg text-center mb-6 sm:mb-8">Interested in working together? Feel free to reach out!</p>
+                <div class="flex flex-col space-y-4">
+                    <a href="mailto:rudreshtrivedi078@gmail.com" class="btn-link flex items-center justify-center text-base" aria-label="Email Rudresh Trivedi">
+                        <svg class="w-5 h-5 sm:w-6 sm:h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        rudreshtrivedi078@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/rudresh-trivedi-212804341/" class="btn-link flex items-center justify-center text-base" aria-label="Rudresh Trivedi's LinkedIn profile">
+                        <svg class="w-5 h-5 sm:w-6 sm:h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-1.337-.027-3.063-1.867-3.063-1.867 0-2.152 1.459-2.152 2.966v5.701h-3v-11h2.879v1.526h.04c.401-.757 1.379-1.557 2.834-1.557 3.027 0 3.586 1.993 3.586 4.586v6.445z"/></svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/RudreshTrivedi013" class="btn-link flex items-center justify-center text-base" aria-label="Rudresh Trivedi's GitHub profile">
+                        <svg class="w-5 h-5 sm:w-6 sm:h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm sm:text-base">© 2025 Rudresh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script defer src="../src/script.js"></script>
+</body>
+</html>

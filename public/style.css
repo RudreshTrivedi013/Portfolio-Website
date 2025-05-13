@@ -1,0 +1,103 @@
+/* Smooth scrolling for mobile */
+html {
+    scroll-behavior: smooth;
+}
+/* Larger tap targets */
+a, button {
+    min-height: 48px;
+    min-width: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+/* Prevent text selection on double-tap */
+body {
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: none;
+}
+/* Ensure images don't overflow */
+img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+/* Custom button hover effects */
+.btn-primary {
+    background: linear-gradient(45deg, #38bdf8, #60a5fa);
+    color: #1a1a1a;
+    transform: scale(1);
+}
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.6), 0 0 10px rgba(224, 247, 250, 0.5);
+    background: linear-gradient(45deg, #60a5fa, #38bdf8);
+}
+.btn-link {
+    color: #38bdf8;
+}
+.btn-link:hover {
+    color: #60a5fa;
+    transform: translateY(-2px);
+    text-decoration: underline;
+}
+.nav-link:hover {
+    color: #60a5fa;
+    transform: translateY(-1px);
+    background-color: rgba(56, 189, 248, 0.1);
+}
+/* Typing effect styles */
+.typing-text {
+    display: inline-block;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+/* Project card hover effects */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.project-card:hover img {
+    transform: scale(1.1);
+}
+/* Fade-in animation for sections */
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Custom cursor */
+.custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #38bdf8 20%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+}
+.custom-cursor.hovered {
+    transform: translate(-50%, -50%) scale(1.5);
+    background: radial-gradient(circle, #60a5fa 20%, transparent 70%);
+}
+/* Particle canvas */
+#particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
